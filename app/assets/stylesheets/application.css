@@ -50,7 +50,17 @@ float: left;
              list-style: none;
              color: black;
              }
- 
+ .logged{
+  list-style: none;
+  display: block;
+  float: left;
+  margin-left: 35px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: black;
+ }
+
+
 
 .square{
    width: 142px;
@@ -164,6 +174,52 @@ h3{
   text-align: center;
 }
 
+.field-page{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.new-user{
+  width: 1100px;
+  margin-left: 200px;
+}
+
+.sign-in-page{
+  width: 900px;
+}
+
+.test {
+ width: 300px;
+ margin-left: 190px;
+}
+
+.group{
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+}
+
+.email{
+ width: 300px;
+ margin-left: 190px;
+ margin-bottom: 20px;
+}
+
+.password, .submit{
+ width: 300px;
+ margin-left: 190px;
+ margin-bottom: 20px;
+ }
+
+
+ .submit{
+
+ }
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

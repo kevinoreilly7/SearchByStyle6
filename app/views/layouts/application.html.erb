@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title> Search By Style</title>
+<title> Search By Style</title> 
 <head>
   <%= stylesheet_link_tag "application.css" %>
   <%= javascript_include_tag "application" %>
@@ -8,12 +8,12 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 <header>
-  <h1> SEARCH BY STYLE </h1>
+  <h1> <a href="Search By Style.html">SEARCH BY STYLE</a> </h1> 
  
   <!-- <h2> <button type="submit" class="btn">Sign Up!</button></h2> -->
       <% if signed_in? %>
-        <li class="signins"><%= link_to current_user.first_name.capitalize, current_user %></li>
-        <li class="signins"><%= link_to "Sign Out", sessions_url, method: 'delete' %></li>
+        <li class="logged"><%= link_to current_user.first_name.capitalize, current_user %></li>
+        <li class="logged"><%= link_to "Sign Out", sessions_url, method: 'delete' %></li>
         <% else %>
         <li class="signins"><%= link_to "Sign In", new_session_url, {class: 'sign'} %></li>
         <li class="signins"><%= link_to "Sign Up", new_user_url, {class: 'sign'} %></li>
