@@ -1,0 +1,153 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	}
+	
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+
+header {
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+h1{
+ font-size: 25px;
+ letter-spacing: 2px;
+ width: 770px;
+ margin-top: 20px;
+ margin-left: 50px;
+ float: left;
+ }
+ 
+h2{
+margin-top: 20px;
+float: left;
+}
+
+.btn{
+	width: 90px;
+	font-size: 14px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	box-shadow: 2px 2px 5px 0px #000;
+	-moz-box-shadow: 2px 2px 5px 0px #000;
+	 -webkit-box-shadow: 2px 2px 5px 0px #000;
+     background: white;
+	}
+
+.square{ 
+   width: 142px; 
+   height: 50px; 
+   background: cyan; opacity: 0.2;
+   float: left;
+   }
+
+.triangle-right{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid cyan;  opacity: 0.2; 
+	border-bottom: 25px solid transparent;
+	float: left;
+    }
+
+.triangle-right-2{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 25px solid transparent;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    }
+    
+.square_1{ 
+   width: 142px; 
+   height: 50px; 
+   background: cyan; 
+   float: left;
+   }
+
+.triangle-right_1{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid cyan; 
+	border-bottom: 25px solid transparent;
+	float: left;
+    }
+
+.triangle-right-2_1{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 25px solid transparent;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    }
+    
+.container{
+	width: 1000px;
+	}
+
+.triangles{
+ overflow: hidden;
+ margin-left: 115px;
+ margin-top: 20px;
+ 	
+}	
+	
+.triangle-1, .triangle-2, .triangle-3, .triangle-4 {
+	float: left;
+	font-size: 15px;
+	}
+
+
+.Interior, .Exterior, .Culture, .Amenities{
+	position: absolute;
+	margin: 13px 70px;
+	z-index: 1;
+    }
+    
+.main-images{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.triangle-4 a:link{color:black; text-decoration: none;}
+.triangle-4 a:visited{color:black;}
+.triangle-4 a:hover{color: black;}
+.triangle-4 a:active{color:black;}
+
+.triangle-1 a:link{color:black; text-decoration: none;}
+.triangle-1 a:visited{color:black;}
+.triangle-1 a:hover{color: black;}
+.triangle-1 a:active{color:black;}
+
+.triangle-2 a:link{color:black; text-decoration: none;}
+.triangle-2 a:visited{color:black;}
+.triangle-2 a:hover{color: black;}
+.triangle-2 a:active{color:black;}
+
+.triangle-3 a:link{color:black; text-decoration: none;}
+.triangle-3 a:visited{color:black;}
+.triangle-3 a:hover{color: black;}
+.triangle-3 a:active{color:black;}
+
+
+h3{
+	text-align: center;
+	font-size: 20px;
+}
+
+.profile{
+	text-align: center;
+}
