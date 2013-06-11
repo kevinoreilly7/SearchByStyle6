@@ -43,7 +43,7 @@
    <div class="triangles">
 
     <div class="triangle-1">
-     <a href="requirements/new?page=interior" class="Interior"> Interior </a>
+     <a id="interior-link" rel='no-follow' class="Interior" > Interior </a>
      <span class="triangle-right-2_1"></span>
      <span class="square_1"></span>
      <span class="triangle-right_1"></span>
@@ -64,7 +64,7 @@
     </div>
 
    <div class="triangle-4">
-    <a href="Amenities.html" class="Amenities" rel='no-follow'> Amenities </a>
+    <a id="amenities-link" href="#" rel='no-follow' class="amenities"> Amenities </a>
     <span class="triangle-right-2"></span>
     <span class="square"></span>
     <span class="triangle-right"></span>
@@ -87,8 +87,8 @@
     <h3> My Style Profile</h3>
     <img src="/assets/placeholder.png" id ="interior" class="small-img" width="90" height="90">
     <img src="/assets/placeholder.png" id="exterior" class="small-img" width="90" height="90">
-    <img src="/assets/placeholder.png" class="small-img" width="90" height="90">
-    <img src="/assets/placeholder.png" class="small-img" width="90" height="90">
+    <img src="/assets/placeholder.png" id="culture" class="small-img" width="90" height="90">
+    <img src="/assets/placeholder.png" id="amenities" class="small-img" width="90" height="90">
    </section>
 
  </div>
@@ -97,6 +97,18 @@
       $(".link").on("click", function () {
         $("#interior").attr("src", $(this).attr("src"));
       });
+
+
+     $("#interior-link").on("click", function () {
+        console.log('its working')
+        $("#picture-left").replaceWith('<img src="/assets/interior1.jpg" class="interior-link" id="picture-left" >')
+        $("#picture-right").replaceWith('<img src="/assets/interior4.jpg" class="interior-link" id="picture-right" > ')
+
+        $(".interior-link").on("click", function () {
+          $("#interior").attr("src", $(this).attr("src"));
+        });
+      });
+
 
       $("#exterior-link").on("click", function () {
         console.log('its working')
@@ -110,10 +122,23 @@
 
       $("#culture-link").on("click", function () {
         console.log('its working')
-        $("#picture-left").attr("src", "/assets/culture1.jpg");
-        $("#picture-right").attr("src", "/assets/culture2.jpg");
+        $("#picture-left").replaceWith('<img src="/assets/culture1.jpg" class="culture-link" id="picture-left" >')
+        $("#picture-right").replaceWith('<img src="/assets/culture2.jpg" class="culture-link" id="picture-right" >')
+
+           $(".culture-link").on("click", function () {
+          $("#culture").attr("src", $(this).attr("src"));
+        });
       });
 
+       $("#amenities-link").on("click", function () {
+        console.log('its working')
+        $("#picture-left").replaceWith('<img src="/assets/amenities.jpg" class="amenities-link" id="picture-left" >')
+     $("#picture-right").replaceWith('<img src="/assets/amenities2.jpg" class="amenities-link" id="picture-right" >')
+
+           $(".amenities-link").on("click", function () {
+          $("#amenities").attr("src", $(this).attr("src"));
+        });
+      });
 
     });
   </script>
