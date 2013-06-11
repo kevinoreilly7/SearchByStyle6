@@ -17,7 +17,7 @@ header {
 h1{
  font-size: 25px;
  letter-spacing: 2px;
- width: 770px;
+ width: 620px;
  margin-top: 20px;
  margin-left: 50px;
  float: left;
@@ -28,17 +28,29 @@ margin-top: 20px;
 float: left;
 }
 
-.btn{
-  width: 90px;
-  font-size: 14px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;
-  box-shadow: 2px 2px 5px 0px #000;
-  -moz-box-shadow: 2px 2px 5px 0px #000;
-   -webkit-box-shadow: 2px 2px 5px 0px #000;
-     background: white;
+.sign{
+  width: 120px;
+  font-size: 17px;
+  
   }
+
+.signins {
+  margin-top: 25px;
+  margin-left: 15px;
+  list-style: none;
+  display: block;
+  float: left;
+  border: 1px solid black;
+  width: 120px;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  a.sign { text-decoration: none; 
+             list-style: none;
+             color: black;
+             }
+ 
 
 .square{
    width: 142px;

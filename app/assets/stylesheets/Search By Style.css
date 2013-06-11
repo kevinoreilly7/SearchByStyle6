@@ -5,7 +5,16 @@ body{
 .container{
 	width: 1000px;
 	margin: 0 auto;
-	
+	}
+.group{
+	.group:before,
+	.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
 }
 
 header {
@@ -38,6 +47,7 @@ float: left;
 	-moz-box-shadow: 2px 2px 5px 0px #000;
 	 -webkit-box-shadow: 2px 2px 5px 0px #000;
      background: white;
+
 	}
 
 .square{ 
