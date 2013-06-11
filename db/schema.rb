@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130606173351) do
+ActiveRecord::Schema.define(:version => 20130611023636) do
 
   create_table "requirement_styles", :force => true do |t|
     t.integer  "style_id"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20130606173351) do
     t.boolean  "culture"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.boolean  "amenity"
+    t.string   "image"
   end
 
   create_table "users", :force => true do |t|

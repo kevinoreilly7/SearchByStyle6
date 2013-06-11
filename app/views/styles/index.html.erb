@@ -12,6 +12,7 @@
 
 <% @styles.each do |style| %>
   <tr>
+    <td><%= link_to image_submit_tag style.image_url(:thumb) %></td>
     <td><%= style.exterior %></td>
     <td><%= style.interior %></td>
     <td><%= style.culture %></td>

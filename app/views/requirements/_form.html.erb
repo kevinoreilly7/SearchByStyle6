@@ -1,3 +1,6 @@
+
+
+
 <%= form_for(@requirement) do |f| %>
   <% if @requirement.errors.any? %>
     <div id="error_explanation">
@@ -19,3 +22,103 @@
     <%= f.submit %>
   </div>
 <% end %>
+<!DOCTYPE html>
+<html>
+<title> Search By Style</title>
+<head>
+  <%= stylesheet_link_tag "application.css" %>
+<!-- <link rel="stylesheets" type="text/css" href="application.css"> -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+
+<%= yield %>
+<body>
+ </header>
+
+
+  <div class="container">
+   <div class="triangles">
+
+    <div class="triangle-1">
+     <a href="requirements/new?page=interior" class="Interior"> Interior </a>
+     <span class="triangle-right-2_1"></span>
+     <span class="square_1"></span>
+     <span class="triangle-right_1"></span>
+    </div>
+
+    <div class="triangle-2">
+     <a id="exterior-link" href="#" rel='no-follow' class="Exterior"> Exterior </a>
+     <span class="triangle-right-2"></span>
+     <span class="square"></span>
+     <span class="triangle-right"></span>
+     </div>
+
+    <div class="triangle-3">
+     <a href="#" class="Culture" rel='no-follow' id="culture-link"> Culture </a>
+     <span class="triangle-right-2"></span>
+     <span class="square"></span>
+     <span class="triangle-right"></span>
+    </div>
+
+   <div class="triangle-4">
+    <a href="Amenities.html" class="Amenities" rel='no-follow'> Amenities </a>
+    <span class="triangle-right-2"></span>
+    <span class="square"></span>
+    <span class="triangle-right"></span>
+   </div>
+
+   </div>
+   </div>
+
+   <section class="main-images">
+    <img src="/assets/interior1.jpg" class="link" id="picture-left" >
+    <img src="/assets/interior4.jpg" class="link" id="picture-right" >
+    <%#= image_tag("interior1.jpg", class: 'link', id: "interior1") %>
+    <%#= image_tag("interior4.jpg", class: 'link', id: "interior2") %>
+    <%#= link_to image_tag("interior4.jpg"), new_requirement_url(page: 'exterior', interior_style: 'interior4.jpg')  %>
+    <!-- <img src="interior1.jpg" alt="exterior1" width="450" height="376" /> -->
+    <!-- <img src="interior4.jpg" class="pic2" width="450" height="376"> -->
+   </section>
+
+   <section class="profile">
+    <h3> My Style Profile</h3>
+    <img src="/assets/placeholder.png" id ="interior" class="small-img" width="90" height="90">
+    <img src="/assets/placeholder.png" id="exterior" class="small-img" width="90" height="90">
+    <img src="/assets/placeholder.png" class="small-img" width="90" height="90">
+    <img src="/assets/placeholder.png" class="small-img" width="90" height="90">
+   </section>
+
+ </div>
+  <script>
+    $(document).ready(function(){
+      $(".link").on("click", function () {
+        $("#interior").attr("src", $(this).attr("src"));
+      });
+
+      $("#exterior-link").on("click", function () {
+        console.log('its working')
+        $("#picture-left").replaceWith('<img src="/assets/exterior1.jpg" class="ext-link" id="picture-left" >')
+        $("#picture-right").replaceWith('<img src="/assets/exterior2.jpg" class="ext-link" id="picture-right" >')
+
+        $(".ext-link").on("click", function () {
+          $("#exterior").attr("src", $(this).attr("src"));
+        });
+      });
+
+      $("#culture-link").on("click", function () {
+        console.log('its working')
+        $("#picture-left").attr("src", "/assets/culture1.jpg");
+        $("#picture-right").attr("src", "/assets/culture2.jpg");
+      });
+
+
+    });
+  </script>
+</body>
+</html>
+
+
+</html>
+
+

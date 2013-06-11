@@ -26,6 +26,13 @@ class RequirementsController < ApplicationController
   def new
     @requirement = Requirement.new
 
+    # if params[:page] == 'interior'
+    #   @choice1 = 'interior1.jpg'
+    # else
+    if params[:interior_style]
+      session[:interior_style] = params[:interior_style]
+    end
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @requirement }

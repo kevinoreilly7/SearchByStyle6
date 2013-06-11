@@ -1,8 +1,16 @@
 Sbs6::Application.routes.draw do
+
+  root to: "requirements#new"
+
+  get '/sessions/new' => 'Sessions#new', as: 'new_session'
+  post '/sessions' => 'Sessions#create', as: 'sessions'
+  delete '/sessions' => 'Sessions#destroy', as: 'session'
+
   resources :requirement_styles
 
 
   resources :requirements
+
 
 
   resources :styles

@@ -12,6 +12,15 @@
   <% end %>
 
   <div class="field">
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remote_image_url, "or image URL" %><br />
+    <%= f.text_field :remote_image_url %>
+  </div>
+
+  <div class="field">
     <%= f.label :exterior %><br />
     <%= f.check_box :exterior %>
   </div>
@@ -22,6 +31,10 @@
   <div class="field">
     <%= f.label :culture %><br />
     <%= f.check_box :culture %>
+  </div>
+  <div class="field">
+    <%= f.label :amenity %><br />
+    <%= f.check_box :amenity %>
   </div>
   <div class="actions">
     <%= f.submit %>
