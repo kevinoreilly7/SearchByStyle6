@@ -9,6 +9,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production do
+  gem "pg"
+end
+
 gem "carrierwave", "~> 0.8.0"
 
 gem "rmagick"
