@@ -218,9 +218,25 @@ h3{
  }
 
 
- .submit{
+ .logo{
+  margin-top: -30px;
+  margin-left: -8px;
+  }
 
+ img.logo{
+  width: 1200px;
+  height: 700px;
  }
+
+ .final-images{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 25px;
+  }
+
+  .select-images{
+  padding: 15px;
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

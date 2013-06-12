@@ -1,28 +1,21 @@
-<h1>Listing styles</h1>
 
-<table>
-  <tr>
-    <th>Exterior</th>
-    <th>Interior</th>
-    <th>Culture</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
-<% @styles.each do |style| %>
-  <tr>
-    <td><%= link_to image_submit_tag style.image_url(:thumb) %></td>
-    <td><%= style.exterior %></td>
-    <td><%= style.interior %></td>
-    <td><%= style.culture %></td>
-    <td><%= link_to 'Show', style %></td>
-    <td><%= link_to 'Edit', edit_style_path(style) %></td>
-    <td><%= link_to 'Destroy', style, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
 
-<%= link_to 'New Style', new_style_path %>
+ 
+ <section class="final-images">
+  <img src="/assets/interior1.jpg" class="select-images" width="210" height="210">
+  <img src="/assets/exterior1.jpg" class="select-images" width="210" height="210">
+  <img src="/assets/culture2.jpg" class="select-images" width="210" height="210">
+  <img src="/assets/amenities2.jpg" class="select-images" width="210" height="210">
+ </section>
+
+
+
+
+
+
+
+
+
+
