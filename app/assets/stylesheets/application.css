@@ -224,7 +224,7 @@ h3{
   }
 
  img.logo{
-  width: 1200px;
+  width: 1300px;
   height: 700px;
  }
 
@@ -236,6 +236,10 @@ h3{
 
   .select-images{
   padding: 15px;
+}
+
+.image-container{
+  100%;
 }
 
 /*
