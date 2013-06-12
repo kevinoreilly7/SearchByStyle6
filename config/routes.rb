@@ -1,6 +1,6 @@
 Sbs6::Application.routes.draw do
 
-  root to: "requirements#new"
+  root to: "homepage#index"
 
   get '/sessions/new' => 'Sessions#new', as: 'new_session'
   post '/sessions' => 'Sessions#create', as: 'sessions'
@@ -18,6 +18,8 @@ Sbs6::Application.routes.draw do
 
   resources :users
 
+
+  get "/homepage" => "Homepage#index", as: "homepage"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
