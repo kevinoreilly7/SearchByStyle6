@@ -32,7 +32,7 @@ float: left;
 .sign{
   width: 120px;
   font-size: 17px;
-  
+
   }
 
 .signins {
@@ -47,7 +47,7 @@ float: left;
   text-align: center;
   }
 
-  a.sign { text-decoration: none; 
+  a.sign { text-decoration: none;
              list-style: none;
              color: black;
              }
@@ -66,7 +66,7 @@ float: left;
 .square{
    width: 142px;
    height: 50px;
-   background: cyan; 
+   background: cyan;
    float: left;
    }
 
@@ -74,7 +74,7 @@ float: left;
   width: 0;
   height: 0;
   border-top: 25px solid transparent;
-  border-left: 50px solid cyan;  
+  border-left: 50px solid cyan;
   border-bottom: 25px solid transparent;
   float: left;
     }
@@ -199,7 +199,7 @@ h3{
 .group:after {
     content: "";
     display: table;
-} 
+}
 .group:after {
     clear: both;
 }
@@ -240,6 +240,12 @@ h3{
 
 .image-container{
   width: 100%;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+
 }
 
 /*
